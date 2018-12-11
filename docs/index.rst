@@ -103,7 +103,7 @@ It is quite easy to add attachments, we need :class:`Attachment` instance::
     
     from sender import Attachment
 
-    with open("logo.jpg") as f:
+    with open("logo.jpg", "rb") as f:
         attachment = Attachment("logo.jpg", "image/jpeg", f.read())
 
     msg.attach(attachment)
